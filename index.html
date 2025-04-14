@@ -19,37 +19,87 @@
         text-align: center;
         line-height: 67px;
         color: #fff;
-        font-size: 1.5em;
+        font-size: 2em;
         font-family: Arial, Helvetica, sans-serif;
         text-shadow: 0px -2px 1px rgba(0, 0, 0, 0.5);
       }
       .myform > div > input {
-        width: 475px;
+        width: 85%;
         height: 38px;
+        padding-left:40px;
         border-radius: 25px;
         margin: auto;
         display: block;
-        margin: 7px auto;
+        margin: 10px auto;
         background-image: -webkit-linear-gradient(top, #b1b1b1, #d7d7d7);
       }
       .tnc {
         font-size: 1em !important;
         text-align: left !important;
         color: #fff;
+        padding:0px 20px;
       }
-    </style>
+      .box{
+        padding:0px 20px;
+      }
+      input:focus{
+        outline:none;
+      }
+      .tnc a{
+        color:#6a7620;
+      }
+      input[type="submit"]{
+        display:block;
+        width:250px;
+        height:47px;
+        border-radius:50px;
+        font-size:1.5em;
+        float:right;
+        background-image:-webkit-linear-gradient(top,#909419,#717c00);
+        color:#fff;
+        margin-right:20px;
+        margin-top:50px;
+      text-shadow: 0px -2px 1px rgba(0, 0, 0, 0.5);
+      box-shadow:0px -1px 0px 0px #b4bb2c;  
+      border:none; 
+      }
+   .box input:first-child{
+      background-image:url(./img/1.png), -webkit-linear-gradient(top, #b1b1b1, #d7d7d7);
+      background-repeat:no-repeat,repeat;
+      background-position:10px center;
+
+   }
+   .box input:nth-child(4){
+    background-image:url(./img/4.png),-webkit-linear-gradient(top, #b1b1b1, #d7d7d7);
+    background-repeat:no-repeat, repeat;
+    background-position:10px center;
+   }
+   .box input:nth-child(2){
+    background-image:url(./img/2.png),-webkit-linear-gradient(top, #b1b1b1, #d7d7d7);
+    background-repeat: no-repeat ,repeat;
+    background-position:10px center;
+
+   }
+   .box input:nth-child(3){
+    background-image:url(./img/3.png),-webkit-linear-gradient(top, #b1b1b1, #d7d7d7);
+    background-repeat: no-repeat,repeat ;
+    background-position: 10px center;
+   }
+        
+   </style>   
     </head>
     <body>
        <form class="myform">
          <div class="cacc">Create an Account</div>
-          <div>
-          <input type="text" />
-          <input type="number" />
-          <input type="email" />
-          <input type="password" />
-          <div class="tnc">  I agree to the Term and Condition and Privacy Policy
+          <div class="box">
+          <input type="text" name="fname" value="" placeholder="Name">
+          <input type="number" name="phonnumber" value="" placeholder="Phone Number">
+          <input type="email" name="email" value="" placeholder="Email">
+          <input type="password" name="password" value="" placeholder="Password">
+          <div class="tnc"><input type="checkbox" name="tnc" value="agree">  I agree to the <a href="#">Term and Condition</a> and <a href="#">Privacy Policy</a> 
+         </div>
            </div>
-           </div>
+           <input type="submit" name="submit" value="Create Account">
         </form>
     </body>
 </html>
